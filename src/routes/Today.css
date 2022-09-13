@@ -1,0 +1,37 @@
+.today {
+  user-select: none;
+}
+
+.today h1 {
+  font-size: 38px;
+  line-height: 1.1em;
+  margin: var(--margin-lg) 0 var(--margin);
+}
+
+.today p {
+  font-size: var(--font-size);
+  line-height: 1.25em;
+  margin: 0;
+}
+
+.today footer {
+  display: flex;
+  margin-top: var(--margin);
+}
+
+.today footer button {
+  margin-left: auto;
+}
+
+.word {
+  cursor: pointer;
+  display: inline-block;
+  padding: .05em .2em;
+  line-height: 1em;
+  border-radius: var(--border-radius);
+  transition: all .25s;
+}
+
+.word:hover {
+  background: var(--primary-color);
+}

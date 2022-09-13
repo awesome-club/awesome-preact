@@ -1,0 +1,61 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  margin-left: -250px;
+  width: 90%;
+  max-width: 500px;
+  background: #FFF;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  z-index: 2;
+  animation: fadeIn .25s;
+  padding: 0 var(--margin);
+}
+
+.modal header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.modal header button {
+  margin-left: auto;
+}
+
+.modal audio {
+  width: 100%;
+}
+
+.modal ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.modal h5 {
+  margin: var(--margin) 0 0;
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 1.1em;
+}
+
+.modal h5 span {
+  font-style: italic;
+  margin-right: 5px;
+}
+
+.cover {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, .5);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

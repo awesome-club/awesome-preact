@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap');
+
+:root {
+  --border-radius: 8px;
+  --border-radius-lg: 16px;
+  --font-size: 20px;
+  --margin: 25px;
+  --margin-lg: 50px;
+
+  --primary-color: #b5e6b7;
+  --text-color: #231241;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color:var(--text-color);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  font-family: 'Mukta', sans-serif;
+}
+
+body.dark {
+  background: #010408;
+  color: #FFF;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.btn, button {
+  display: inline-block;
+  text-decoration: none;
+  background: #f2f2f2;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  color: #222;
+  transition: all .25s;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn.sm, button.sm {
+  font-size: 16px;
+  height: 34px;
+}
+
+.btn:hover, button:hover {
+  background: var(--primary-color);
+}

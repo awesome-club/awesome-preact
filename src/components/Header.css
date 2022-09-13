@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.header button {
+  background: none;
+  border: 0;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.header button svg {
+  width: 28px;
+  height: 28px;
+}
+
+.dark .header button svg {
+  fill: #FFF;
+}
